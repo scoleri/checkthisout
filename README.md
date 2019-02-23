@@ -1,23 +1,3 @@
-```
-PHLLMBP-SSCOLERI:~ stevenscoleri$ docker run -it --privileged -d docker:dind /bin/sh
-a7b94acdad2c365dd0fa3df1c5fa9d867115f1c18bf5c7a19e5e4efc198b7dd3
-PHLLMBP-SSCOLERI:~ stevenscoleri$ docker ps
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
-a7b94acdad2c        docker:dind         "dockerd-entrypoint.…"   3 seconds ago       Up 2 seconds        2375/tcp            pedantic_cray
-4e809f2df064        55a341bacc5a        "/bin/bash"              4 weeks ago         Up 12 days                              unruffled_wing
-PHLLMBP-SSCOLERI:~ stevenscoleri$ docker kill pedantic_cray
-pedantic_cray
-PHLLMBP-SSCOLERI:~ stevenscoleri$
-PHLLMBP-SSCOLERI:~ stevenscoleri$ docker run -it --entrypoint="/bin/sh" --privileged -d docker:dind
-98a85b6fe2d5f5cc5fd240bc5786e090e70719ab1efb9bda5009fb3c65cd5683
-PHLLMBP-SSCOLERI:~ stevenscoleri$ docker ps
-CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
-98a85b6fe2d5        docker:dind         "/bin/sh"           3 seconds ago       Up 2 seconds        2375/tcp            cocky_murdock
-4e809f2df064        55a341bacc5a        "/bin/bash"         4 weeks ago         Up 12 days                              unruffled_wing
-PHLLMBP-SSCOLERI:~ stevenscoleri$ docker kill cocky_murdock
-cocky_murdock
-PHLLMBP-SSCOLERI:~ stevenscoleri$
-PHLLMBP-SSCOLERI:~ stevenscoleri$
 PHLLMBP-SSCOLERI:~ stevenscoleri$ docker run --privileged -d docker:dind
 3415814e1dd5e1ee1b70cd7da015ca7aecc11ebdb5ce25f8dcd5dd07b0eb4f65
 PHLLMBP-SSCOLERI:~ stevenscoleri$ docker ps
