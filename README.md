@@ -1,3 +1,4 @@
+```
 PHLLMBP-SSCOLERI:~ stevenscoleri$ docker run --privileged -d docker:dind
 3415814e1dd5e1ee1b70cd7da015ca7aecc11ebdb5ce25f8dcd5dd07b0eb4f65
 PHLLMBP-SSCOLERI:~ stevenscoleri$ docker ps
